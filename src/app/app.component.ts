@@ -51,6 +51,7 @@ export class AppComponent implements OnInit {
           return valor
         } 
       })
+      this.unico = this.unico.sort();
       console.log(this.unico);
     })
   }
