@@ -1,0 +1,19 @@
+<nav class="nav flex-column bg-light col-md-2 navbar-light bg-light">
+    <a id="muzik" class="navbar-brand" routerLink="/">Muzik</a>
+    <li class="nav-item">
+        <a class="nav-link bg-dark text-white active" href="#">Music</a>
+        <ul class="bg-dark text-white" id="nav" style="list-style:none">
+            <div *ngFor="let c of cat">
+                <li class="nav-item">
+                    <button class="nav-link text-white bg-dark btn btn-block" (click)="getAlbumCategory(c)">{{c}}</button>
+                    <input type="text" name="categoria" value="{{c}}" style="display: none;"/>
+                </li> 
+            </div>
+        </ul>
+    </li>
+</nav>
+
+
+
+
+

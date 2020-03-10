@@ -1,0 +1,7 @@
+
+<app-navegacion [categorias]="unico" [album]="albunes" (propagar)="procesaPropagar($event)"></app-navegacion>
+<div id =container class="container p-4">
+    <app-album [album]="albunes" [filtro]="listaFiltrada"></app-album>
+    <router-outlet></router-outlet>
+</div>
+
